@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nanum+Gothic&family=Russo+One&family=Zen+Kurenaido&display=swap');
+
+nav {
+    background: rgb(61, 60, 60);
+    width: 100vW;
+    position: fixed;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+label.logo {
+ color: white;
+ font-size: 35px;
+ line-height: 80px;
+ padding: 0 100px;  
+ font-family: 'Zen Kurenaido', sans-serif; 
+ font-weight: bold;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 17px;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: rgb(161, 161, 161);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px; 
+    cursor: pointer;
+    display: none;
+ }
+
+#check {
+    display: none;
+}
+
+
+
+
+
+
+@media (max-widht: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    } 
+   
+   
+    .header{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #2c3e50;
+        display: block;
+        z-index: 10;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover,:active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    
+  
+   
+
+   
+   
+
+
+}
+section{
+    padding: 80px 0;
+    background-color: #273542;
+    background-size: cover;
+    color: white;
+    height: calc(100vh);
+}
+
+
+/*footer*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+   
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+ 
+   
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+    
+	position: relative;
+   
+}
+.footer-col h4::before{
+	content: '';
+    
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #7dff32dc;
+	height: 2px;
+	box-sizing: border-box;
+	width: 65px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.5s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+    background-color: transparent;
+	padding-left: 8px;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.fixed-footer .container{
+	
+    margin-right: 10px;
+    text-align: right;
+    color: white;
+}
+
+.fixed-footer{
+    background-color: #24262b;
+}
+
+.mcbild{
+    border-radius: 3%;
+    border-color: black;
+    border: 2px solid black;
+}
